@@ -1,0 +1,43 @@
+﻿<Window x:Class="WpfApp1.WindowResult"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WpfApp1"
+        mc:Ignorable="d"
+        Title="WindowResult" Height="700" Width="800">
+    <Grid>
+        <StackPanel Orientation="Horizontal" Height="100" VerticalAlignment="Top">
+            <RadioButton x:Name="BlazerRadio" Content="Blazer" FontSize="20" Checked="SubmitButton_Click" HorizontalAlignment="Left" Margin="200 0 0 0"></RadioButton>
+            <RadioButton x:Name="RadioJeans" Content="Jeans" FontSize="20" Checked="SubmitButton_Click" Margin="0 0 0 0"/>
+            <RadioButton x:Name="RadioSkirt" Content="Skirt"  FontSize="20" Checked="SubmitButton_Click"  Margin="0 0 0 0"></RadioButton>
+        </StackPanel>
+
+        <StackPanel Margin="0 100  0 0">
+            <StackPanel Orientation="Horizontal" >
+                <Label Content="Tissu : " FontSize="30" Margin="180 0 0 0"></Label>
+                <TextBox Name="TextBoxTissu" Width="200" Height="30" Margin="0 0 0 0"></TextBox>
+            </StackPanel>
+
+            <StackPanel Orientation="Horizontal" Margin="0 30 0 0">
+                <Label Content="Size:" FontSize="30" Width="91"  Margin="180 0 0 0"/>
+                <TextBox Width="200" x:Name="TextBoxSize" Height="30" Margin="0 0 0 0"/>
+            </StackPanel>
+
+            <StackPanel Orientation="Horizontal"  Margin="0 30 0 0">
+                <Label Content="Color:" FontSize="30" Margin="180 0 0 0"></Label>
+                <TextBox Width="200" Name ="TextBoxColor" Height="30" Margin="0 0 0 0"></TextBox>
+            </StackPanel>
+
+            <StackPanel Orientation="Horizontal"  Margin="0 100 0 0">
+                <Button x:Name="SubmitButton" Click="SubmitButton_Click" Content="Submit"  Background="LightBlue" Width="100" Cursor="Hand" Height="21" Margin=" 150 0 50 0" ></Button>
+
+
+                <Button x:Name="ResetButton" Click="ResetButton_Click" Content="Reset" Background="LightBlue" Width="100" Cursor="Hand" Height="21" Margin="0 0 50 0" ></Button>
+
+
+                <Button x:Name="MenuButton" Click="MenuButton_Click" Content="Menu" Background="LightBlue" Width="100" Cursor="Hand" Height="21" Margin=" 0 0 0 0" />
+            </StackPanel>
+        </StackPanel>
+    </Grid>
+</Window>
